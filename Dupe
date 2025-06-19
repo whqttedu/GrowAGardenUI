@@ -152,3 +152,9 @@ local function OnTeleport()
     local teleportData = {
         loadingScript = true
     }
+
+    TeleportService:SetTeleportGui(teleportData)
+end
+
+TeleportService.LocalPlayerTeleporting:Connect(OnTeleport)
+TeleportService.TeleportInitiated:Connect(OnTeleport)
