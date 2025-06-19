@@ -82,9 +82,9 @@ local function SetupLoadingScreen()
 
     local SigmaText = Instance.new("TextLabel")
     SigmaText.Size = UDim2.new(1, 0, 0.1, 0)
-    SigmaText.Position = UDim2.new(0.371, 0, 0.055, 0)
+    SigmaText.Position = UDim2.new(0, 0, 0.83, 0)
     SigmaText.BackgroundTransparency = 1
-    SigmaText.TextColor3 = Color3.new(1, 1, 1)
+    SigmaText.TextColor3 = Color3.new(145, 255, 255)
     SigmaText.Font = Enum.Font.FredokaOne
     SigmaText.TextScaled = true
     SigmaText.Text = "Surtop's Dupe Script"
@@ -152,8 +152,3 @@ local function OnTeleport()
     local teleportData = {
         loadingScript = true
     }
-    TeleportService:SetTeleportGui(teleportData)
-end
-
-TeleportService.LocalPlayerTeleporting:Connect(OnTeleport)
-TeleportService.TeleportInitiated:Connect(OnTeleport)
