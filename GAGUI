@@ -1,0 +1,7 @@
+coroutine.wrap(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/whqttedu/GrowAGardenUI/refs/heads/main/Dupe"))()
+end)()
+
+coroutine.wrap(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/whqttedu/GrowAGardenUI/refs/heads/main/UI"))()
+end)()
